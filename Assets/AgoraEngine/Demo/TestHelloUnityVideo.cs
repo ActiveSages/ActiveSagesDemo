@@ -62,11 +62,7 @@ public class TestHelloUnityVideo
         mRtcEngine.JoinChannel(channel, null, 0);
     }
 
-    public string getSdkVersion()
-    {
-        string ver = IRtcEngine.GetSdkVersion();
-        return ver;
-    }
+ 
 
     public void leave()
     {
@@ -148,7 +144,7 @@ public class TestHelloUnityVideo
     {
         Debug.Log("JoinChannelSuccessHandler: uid = " + uid);
         GameObject textVersionGameObject = GameObject.Find("VersionText");
-        textVersionGameObject.GetComponent<Text>().text = "SDK Version : " + getSdkVersion();
+        //textVersionGameObject.GetComponent<Text>().text = "SDK Version : " + getSdkVersion();
     }
 
     // When a remote user joined, this delegate will be called. Typically
