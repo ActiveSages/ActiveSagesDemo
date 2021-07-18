@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Flip Normals Mat
-  m_Shader: {fileID: 4800000, guid: 8752604111f4b1745a1d46b9d8ae5ef8, type: 3}
+  m_Shader: {fileID: 4800000, guid: 9cc8ebbb8328df7418a38cfb7ab5c0ec, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -55,7 +55,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Ints: []
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5

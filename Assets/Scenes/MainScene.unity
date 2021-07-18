@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -342,7 +342,6 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -390,7 +389,7 @@ Transform:
   m_GameObject: {fileID: 1954676918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1500, y: 1500, z: 1500}
+  m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -421,10 +420,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1964205381}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8e4d933b65560a479f33b99f8c2b20d, type: 3}
+  m_Script: {fileID: 11500000, guid: e318cef7fd6825640844cb074a3508af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AppID: 3210dc0b1bc6423fb025d0d33e2e519a
+  AppID: aab8b8f5a8cd4469a63042fcfafe7063
   videoSphere: {fileID: 1954676918}
   channelName: Test1
 --- !u!4 &1964205383

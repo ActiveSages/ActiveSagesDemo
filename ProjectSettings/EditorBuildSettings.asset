@@ -6,13 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/AgoraEngine/Demo/SceneHome.unity
-    guid: 11e44933caff747879b06a78a609ddfe
-  - enabled: 1
-    path: Assets/AgoraEngine/Demo/SceneHelloVideo.unity
-    guid: 38239e0a3e78848d8a1e3b083920e199
+    path: Assets/Scenes/MainScene.unity
+    guid: 8039367c2ba3e734b9ad48bd8e2c957b
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a6d451da019781d4a8354f163393e7e0, type: 2}
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b368673f5f855364b96b6574d3a8afe6, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7b0595aec7f192e4e9fe737ff23cdff9, type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: b240129fdbd8334408174698c4673bc2, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: a61b22326301f0f4a8eb60fc5a544849, type: 2}
     xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 3305cababf83ab1408967e076c7b7533, type: 2}
