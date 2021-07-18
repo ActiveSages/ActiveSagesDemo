@@ -12,5 +12,7 @@ EditorBuildSettings:
     path: Assets/AgoraEngine/Demo/SceneHelloVideo.unity
     guid: 38239e0a3e78848d8a1e3b083920e199
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a6d451da019781d4a8354f163393e7e0, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7b0595aec7f192e4e9fe737ff23cdff9, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: b240129fdbd8334408174698c4673bc2, type: 2}
     xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 3305cababf83ab1408967e076c7b7533, type: 2}
