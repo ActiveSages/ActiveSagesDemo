@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-using agora_gaming_rtc;
-using agora_utilities;
+#if(UNITY_2018_3_OR_NEWER && UNITY_ANDROID)
+using UnityEngine.Android;
+#endif
+
 
 public class GameController : MonoBehaviour
 {

@@ -425,7 +425,7 @@ namespace agora_gaming_rtc
             if (mesh != null)
             {
                 
-                mesh.material = new Material(Shader.Find("Custom/Flip Normals"));
+                mesh.material = new Material(Shader.Find("Unlit/Texture"));
             }
         }
     }
