@@ -90,6 +90,7 @@ public class VideoCall
     private void onJoinChannelSucces(string channelName, uint channelID, int timeElapsed)
     {
         Debug.Log("Succesfully joined: " + channelName + ". ID: " + channelID);
+        m_RtcEngine.MuteLocalVideoStream(true);
     }
 
     private const float Offset = 100;

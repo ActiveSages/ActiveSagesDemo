@@ -201,7 +201,7 @@ public class TestHelloUnityVideo
     private const float Offset = 100;
     public VideoSurface makeImageSurface(string goName)
     {
-        GameObject go = GameObject.CreatePrimitive(PrimitiveType.Plane);
+        GameObject go = new GameObject();
 
         if (go == null)
         {
@@ -225,7 +225,7 @@ public class TestHelloUnityVideo
         float xPos = Random.Range(Offset - Screen.width / 2f, Screen.width / 2f - Offset);
         float yPos = Random.Range(Offset, Screen.height / 2f - Offset);
         go.transform.localPosition = new Vector3(xPos, yPos, 0f);
-        go.transform.localScale = new Vector3(5f, 5f, 5f);
+        go.transform.localScale = new Vector3(3f, 4f, 1f);
 
         // configure videoSurface
         VideoSurface videoSurface = go.AddComponent<VideoSurface>();
