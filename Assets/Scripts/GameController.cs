@@ -24,7 +24,7 @@ public class GameController : MonoBehaviour
     [SerializeField]
     private string channelName = "Test1";
 
-    static VideoCall videoCallSystem = null;
+    public static VideoCall videoCallSystem = null;
 
     void Awake()
     {

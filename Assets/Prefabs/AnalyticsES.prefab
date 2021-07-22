@@ -55,7 +55,7 @@ MonoBehaviour:
   _username: anonymous
   _mail: foo@bar.com
   _sessionTag: 
-  _url: 
+  _url: http://localhost:9200
   _needsCredentials: 0
 --- !u!114 &7344267375849109212
 MonoBehaviour:

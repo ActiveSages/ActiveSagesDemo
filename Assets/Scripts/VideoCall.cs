@@ -9,7 +9,7 @@ using agora_utilities;
 public class VideoCall
 {
     // instance of agora engine
-    private IRtcEngine m_RtcEngine;
+    public IRtcEngine m_RtcEngine;
     private Text MessageText;
 
     [SerializeField]
@@ -63,7 +63,7 @@ public class VideoCall
         //  Setting callbacks. This could probably be handled better using dedicated functions
         m_RtcEngine.OnJoinChannelSuccess = onJoinChannelSucces;
         m_RtcEngine.OnUserJoined = onUserJoinedChannel;
-        m_RtcEngine.OnRtcStats = onGetCallStats;
+        m_RtcEngine.OnRtcStats = GameObject.FindObjectOfType<AnalyticsSender>().onGetCallStats;
         //m_RtcEngine.OnUserOffline = Callback to handle user offline;
         //m_RtcEngine.OnWarning = Callback To handle Warnings;
         //m_RtcEngine.OnError = Callback to handle errors;

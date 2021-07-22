@@ -4,6 +4,8 @@ using UnityEngine;
 
 using SWT.Analytics;
 
+using agora_gaming_rtc;
+
 public class AnalyticsSender : MonoBehaviour
 {
   public float maxTimer = 5.0f;
@@ -16,7 +18,8 @@ public class AnalyticsSender : MonoBehaviour
   {
     _sessionStart = System.DateTime.UtcNow;
     Analytics.Get.QueueDesignEvent(string.Empty, "session_start", _sessionStart.ToString("yyyy/MM/dd HH:mm:ss:ff"));
-    _timer = 0.0f;
+    Analytics.Get.SetDatabase("saeko_test_1");
+  _timer = 0.0f;
   }
 
   // Update is called once per frame
@@ -41,6 +44,16 @@ public class AnalyticsSender : MonoBehaviour
   public void DebugMessage()
   {
     Debug.Log("SENT DATA");
+  }
+
+  public void onGetCallStats(RtcStats stats)
+  {
+    Debug.Log("-----CALL STATS-----");
+
+    Analytics.Get.QueueDesignEvent(string.Empty, "session_call_duration", stats.duration);
+    Analytics.Get.QueueDesignEvent(string.Empty, "session_call_userst", stats.userCount);
+    Analytics.Get.QueueDesignEvent(string.Empty, "session_call_latency", stats.lastmileDelay);
+    Analytics.Get.QueueDesignEvent(string.Empty, "session_cpu_usage", (float)stats.cpuAppUsage);
   }
 
 }

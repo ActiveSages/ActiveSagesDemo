@@ -45,7 +45,7 @@ namespace SWT
       private void Update()
       {
         _internalTime += Time.deltaTime;
-        if (_internalTime >= maxQueueSize)
+        if (_internalTime >= maxQueueTime)
         {
           SendQueue();
           _internalTime = 0.0f;
@@ -233,6 +233,7 @@ namespace SWT
       OnRequestSent()
       {
         _queue.Clear();
+        base.OnRequestSent();
       }
 
       public override void
