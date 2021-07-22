@@ -129,7 +129,11 @@ namespace SWT
         body.Add("os_family", SystemInfo.operatingSystemFamily.ToString());
         body.Add("os_version", System.Environment.OSVersion.Platform.ToString());
         body.Add("os_type", System.Environment.Is64BitOperatingSystem ? "x64" : "x86");
+
         // Basic Hardware Information
+        body.Add("device_name", SystemInfo.deviceName);
+        body.Add("device_model", SystemInfo.deviceModel);
+        body.Add("device_type", SystemInfo.deviceType);
 
         // CPU Information
         body.Add("cpu_name", SystemInfo.processorType);
