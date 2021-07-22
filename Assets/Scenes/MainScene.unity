@@ -240,8 +240,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7344267375849109213, guid: 2bda3a4e69185334da2f3938f61f5cfc, type: 3}
+      propertyPath: _url
+      value: https://saeko-test-1.es.eastus2.azure.elastic-cloud.com:9243/
+      objectReference: {fileID: 0}
+    - target: {fileID: 7344267375849109213, guid: 2bda3a4e69185334da2f3938f61f5cfc, type: 3}
       propertyPath: _maxQueueTime
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7344267375849109213, guid: 2bda3a4e69185334da2f3938f61f5cfc, type: 3}
+      propertyPath: _needsCredentials
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7344267375849109213, guid: 2bda3a4e69185334da2f3938f61f5cfc, type: 3}
       propertyPath: RequestSentEvent.m_PersistentCalls.m_Calls.Array.size

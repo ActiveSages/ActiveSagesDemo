@@ -189,6 +189,11 @@ namespace SWT
             System.Uri urlToPost = new System.Uri(url + "/_bulk?pretty");
             request.Headers.Add("Content-Type", "application/json");
 
+            if (needsCredentials)
+            {
+              request.Credentials = new System.Net.NetworkCredential(_urlUsername, _urlPassword);
+            }
+
             request.UploadStringCompleted += Request_UploadStringCompleted;
             request.UploadStringAsync(urlToPost, "POST", output);
             OnRequestSent();
@@ -223,7 +228,10 @@ namespace SWT
         System.Net.WebClient request = new System.Net.WebClient();
         System.Uri urlToPost = new System.Uri(url + "/_bulk?pretty");
         request.Headers.Add("Content-Type", "application/json");
-
+        if (needsCredentials)
+        {
+          request.Credentials = new System.Net.NetworkCredential(_urlUsername, _urlPassword);
+        }
         request.UploadStringCompleted += Request_UploadStringCompleted;
         request.UploadStringAsync(urlToPost, "POST", output);
         OnRequestSent();
@@ -266,7 +274,10 @@ namespace SWT
         System.Net.WebClient request = new System.Net.WebClient();
         System.Uri urlToPost = new System.Uri(url + $"/{database}/{table}/message?pretty");
         request.Headers.Add("Content-Type", "application/json");
-
+        if (needsCredentials)
+        {
+          request.Credentials = new System.Net.NetworkCredential(_urlUsername, _urlPassword);
+        }
         request.UploadStringCompleted += Request_UploadStringCompleted;
         request.UploadStringAsync(urlToPost, "POST", bodyStr);
         OnRequestSent();
@@ -289,7 +300,10 @@ namespace SWT
         System.Net.WebClient request = new System.Net.WebClient();
         System.Uri urlToPost = new System.Uri(url + $"/{database}/{table}/message?pretty");
         request.Headers.Add("Content-Type", "application/json");
-
+        if (needsCredentials)
+        {
+          request.Credentials = new System.Net.NetworkCredential(_urlUsername, _urlPassword);
+        }
         request.UploadStringCompleted += Request_UploadStringCompleted;
         request.UploadStringAsync(urlToPost, "POST", bodyStr);
         OnRequestSent();
@@ -312,7 +326,10 @@ namespace SWT
         System.Net.WebClient request = new System.Net.WebClient();
         System.Uri urlToPost = new System.Uri(url + $"/{database}/{table}/message?pretty");
         request.Headers.Add("Content-Type", "application/json");
-
+        if (needsCredentials)
+        {
+          request.Credentials = new System.Net.NetworkCredential(_urlUsername, _urlPassword);
+        }
         request.UploadStringCompleted += Request_UploadStringCompleted;
         request.UploadStringAsync(urlToPost, "POST", bodyStr);
         OnRequestSent();
@@ -337,7 +354,10 @@ namespace SWT
         System.Net.WebClient request = new System.Net.WebClient();
         System.Uri urlToPost = new System.Uri(url + $"/{database}/{table}/message?pretty");
         request.Headers.Add("Content-Type", "application/json");
-
+        if (needsCredentials)
+        {
+          request.Credentials = new System.Net.NetworkCredential(_urlUsername, _urlPassword);
+        }
         request.UploadStringCompleted += Request_UploadStringCompleted;
         request.UploadStringAsync(urlToPost, "POST", bodyStr);
         OnRequestSent();

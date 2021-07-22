@@ -19,18 +19,14 @@ public class AnalyticsSender : MonoBehaviour
     _sessionStart = System.DateTime.UtcNow;
     Analytics.Get.QueueDesignEvent(string.Empty, "session_start", _sessionStart.ToString("yyyy/MM/dd HH:mm:ss:ff"));
     Analytics.Get.SetDatabase("saeko_test_1");
-  _timer = 0.0f;
+    Analytics.Get.SetCredentials("elastic", "CJeRtdr2hOv7NRJ4csrES2WJ");
+    _timer = 0.0f;
   }
 
   // Update is called once per frame
   void Update()
   {
-    _timer += Time.deltaTime;
-    if (_timer > maxTimer)
-    {
-      Analytics.Get.QueueDesignEvent(string.Empty, "session_test", _sessionStart.ToString("yyyy/MM/dd HH:mm:ss:ff"));
-      _timer = 0.0f;
-    }
+    
   }
 
   private void OnApplicationQuit()

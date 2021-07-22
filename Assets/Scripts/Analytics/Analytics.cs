@@ -172,6 +172,11 @@ namespace SWT
       public string url { get => _url; }
 
       /// <summary>
+      /// If the user needs credentials to access database
+      /// </summary>
+      public bool needsCredentials { get => _needsCredentials; }
+
+      /// <summary>
       /// Event to be sent once the request of queue is sent
       /// </summary>
       [Tooltip("The events to be sent when the request is sent")]
