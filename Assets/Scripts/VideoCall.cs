@@ -30,10 +30,11 @@ public class VideoCall
 
         //  Set up flags for debugging/logging
         m_RtcEngine.SetLogFilter(LOG_FILTER.DEBUG | LOG_FILTER.INFO | LOG_FILTER.WARNING | LOG_FILTER.ERROR | LOG_FILTER.CRITICAL);
+        videoSphere.transform.Rotate(0f, 0.0f, 180.0f);
 
-    }
+  }
 
-    public void DestroyEngine()
+  public void DestroyEngine()
     {
         Debug.Log("calling unloadEngine");
 
@@ -104,8 +105,8 @@ public class VideoCall
             return;
         }
         videoSphere.name = uid.ToString();
-        //videoSphere.AddComponent<RawImage>();
-        videoSphere.transform.Rotate(0f, 0.0f, 180.0f);
+        // videoSphere.AddComponent<RawImage>();
+        // videoSphere.transform.Rotate(0f, 0.0f, 180.0f);
 
         VideoSurface sphereVideoSurface = videoSphere.AddComponent<VideoSurface>();
     
