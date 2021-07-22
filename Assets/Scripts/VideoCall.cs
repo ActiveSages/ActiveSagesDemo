@@ -63,6 +63,7 @@ public class VideoCall
         //  Setting callbacks. This could probably be handled better using dedicated functions
         m_RtcEngine.OnJoinChannelSuccess = onJoinChannelSucces;
         m_RtcEngine.OnUserJoined = onUserJoinedChannel;
+        m_RtcEngine.OnRtcStats = onGetCallStats;
         //m_RtcEngine.OnUserOffline = Callback to handle user offline;
         //m_RtcEngine.OnWarning = Callback To handle Warnings;
         //m_RtcEngine.OnError = Callback to handle errors;
@@ -118,6 +119,16 @@ public class VideoCall
             sphereVideoSurface.SetGameFps(30);
 
         }
+    }
+    
+    
+    private void onGetCallStats(RtcStats stats)
+    {
+        Debug.Log("-----CALL STATS-----");
+        Debug.Log("Call duration: " + stats.duration);
+        Debug.Log("Users: " + stats.userCount);
+        Debug.Log("Latency: " + stats.lastmileDelay);
+        Debug.Log("CPU usage: " + stats.cpuAppUsage);
     }
 
     public VideoSurface SetVideoOnSphere(string goName)
