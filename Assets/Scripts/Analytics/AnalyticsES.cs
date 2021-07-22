@@ -20,6 +20,8 @@ namespace SWT
 
       private Object _lock = new Object();
 
+      private float _ms = 0.0f;
+
       #endregion
 
       #region MonobehaviorMethods
@@ -274,6 +276,7 @@ namespace SWT
                       string eventID,
                       float floatValue)
       {
+        if (table == string.Empty) { table = "_doc"; }
         var body = CreateJSONBody(eventID);
         body.Add("float_value", floatValue);
 
@@ -296,6 +299,7 @@ namespace SWT
                       string eventID,
                       string stringValue)
       {
+        if (table == string.Empty) { table = "_doc"; }
         var body = CreateJSONBody(eventID);
         body.Add("string_value", stringValue);
 
@@ -319,6 +323,7 @@ namespace SWT
                       float floatValue,
                       string stringValue)
       {
+        if (table == string.Empty) { table = "_doc"; }
         var body = CreateJSONBody(eventID);
         body.Add("float_value", floatValue);
         body.Add("string_value", stringValue);
