@@ -141,6 +141,8 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: b368673f5f855364b96b6574d3a8afe6, type: 2}
   - {fileID: -4074204862752422699, guid: a61b22326301f0f4a8eb60fc5a544849, type: 2}
   - {fileID: 0}
   - {fileID: -5014852002492945410, guid: 7b0595aec7f192e4e9fe737ff23cdff9, type: 2}
@@ -169,7 +171,7 @@ PlayerSettings:
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 28
+  AndroidMinSdkVersion: 23
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
   aotOptions: 
