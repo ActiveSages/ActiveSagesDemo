@@ -133,7 +133,7 @@ namespace SWT
         // Basic Hardware Information
         body.Add("device_name", SystemInfo.deviceName);
         body.Add("device_model", SystemInfo.deviceModel);
-        body.Add("device_type", SystemInfo.deviceType);
+        body.Add("device_type", SystemInfo.deviceType.ToString());
 
         // CPU Information
         body.Add("cpu_name", SystemInfo.processorType);
